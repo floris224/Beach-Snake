@@ -1,9 +1,13 @@
 using UnityEngine;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using TMPro;
 
 public class Snake : MonoBehaviour
 {
-    private PlayerControls playerControls;
+    public int score;
+    public TMP_Text text;
+    public PlayerControls playerControls;
     public List<Transform> BodyParts = new List<Transform>();
     public float minDistance = 0.25f;
     public float speed;
@@ -13,6 +17,7 @@ public class Snake : MonoBehaviour
     public float distance;
     private Transform currentBodyPart;
     private Transform previousBodyPart;
+    public GameObject canvas;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -46,7 +51,7 @@ public class Snake : MonoBehaviour
     {
         float curSpeed = speed;
         Vector2 move = playerControls.Player.Move.ReadValue<Vector2>();
-        if (move.y > 1) 
+        if (Input.GetKey(KeyCode.W))
         {
             curSpeed *= 2;
 
@@ -56,11 +61,11 @@ public class Snake : MonoBehaviour
        
         if (move.x < 0)
         {
-            BodyParts[0].Rotate(Vector3.up * -rotationSpeed * Time.deltaTime, move.x);
+            BodyParts[0].Rotate(Vector3.up * -rotationSpeed *  1);
         }
         else if (move.x > 0)
         {
-            BodyParts[0].Rotate(Vector3.up * -rotationSpeed * Time.deltaTime, move.x);
+            BodyParts[0].Rotate(Vector3.up * -rotationSpeed * -1);
         }
         for (int i = 1; i < BodyParts.Count; i++)
         {
@@ -82,8 +87,18 @@ public class Snake : MonoBehaviour
     }
     public void AddBodyPart()
     {
+
         Transform newpart = (Instantiate(bodyPrefab, BodyParts[BodyParts.Count - 1].position, BodyParts[BodyParts.Count - 1].rotation) as GameObject).transform ;
         newpart.SetParent(transform);
+        if(speed <= 12)
+        {
+            speed += 0.5f;
+        }
+        score += 1;
+        text.text = "Score : " + score;
         BodyParts.Insert(1,newpart);
     }
+   
+
+
 }
