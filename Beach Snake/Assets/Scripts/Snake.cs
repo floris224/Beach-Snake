@@ -100,7 +100,7 @@ public class Snake : MonoBehaviour
         newpart.SetParent(transform);
         if(speed <= 12)
         {
-            speed += 0.5f;
+            speed += 0.25f;
         }
         score += 1;
         text.text = "Score : " + score;

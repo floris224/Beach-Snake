@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7858376405578605392}
   m_Layer: 0
   m_Name: Cylinder.070
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -224,7 +224,7 @@ MonoBehaviour:
   player: {fileID: 0}
   terrain: {fileID: 0}
   spawnFood: {fileID: 0}
-  audio: {fileID: 291997523005429136}
+  audioSource: {fileID: 0}
 --- !u!1 &6071782494156233041
 GameObject:
   m_ObjectHideFlags: 0
