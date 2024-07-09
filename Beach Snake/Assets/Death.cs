@@ -1,12 +1,17 @@
 using UnityEngine;
-
+using TMPro;
 public class Death : MonoBehaviour
 {
+    public TMP_Text text;
     public Snake snake;
-    public GameObject panel;
+    public GameObject panel, parentSnake,textHolder;
     private void Awake()
     {
-        snake = GetComponentInParent<Snake>();
+      
+        parentSnake = GameObject.FindGameObjectWithTag("Main");
+        snake = parentSnake.GetComponent<Snake>();
+
+        panel = GameObject.FindGameObjectWithTag("Panel");
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -15,6 +20,8 @@ public class Death : MonoBehaviour
             panel.SetActive(false);
             snake.canvas.SetActive(true);
             snake.playerControls.Disable();
+            snake.speed = 0;
+            text.text = "Score : " + snake.score.ToString(); 
         }
     }
 }

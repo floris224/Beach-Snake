@@ -2,15 +2,18 @@ using UnityEngine;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using TMPro;
+using static UnityEngine.Rendering.DebugUI;
 
 public class Snake : MonoBehaviour
 {
+    
     public int score;
     public TMP_Text text;
     public PlayerControls playerControls;
     public List<Transform> BodyParts = new List<Transform>();
     public float minDistance = 0.25f;
     public float speed;
+    public float currentSpeed;
     public float rotationSpeed;
     public GameObject bodyPrefab;
     public int beginingSize;
@@ -18,6 +21,8 @@ public class Snake : MonoBehaviour
     private Transform currentBodyPart;
     private Transform previousBodyPart;
     public GameObject canvas;
+    public Rigidbody rb;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -41,15 +46,18 @@ public class Snake : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         Move();
         if (Input.GetKeyDown(KeyCode.Q))
         {
             AddBodyPart();
         }
     }
+   
     public void Move()
     {
         float curSpeed = speed;
+
         Vector2 move = playerControls.Player.Move.ReadValue<Vector2>();
         if (Input.GetKey(KeyCode.W))
         {

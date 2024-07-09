@@ -6,11 +6,11 @@ public class Eat : MonoBehaviour
     public Snake snake;
     public GameObject player, terrain;
     public SpawnFood spawnFood;
-    public AudioSource audio;
+    public AudioSource audioSource;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
-        audio = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
         terrain = GameObject.FindGameObjectWithTag("Ground");
         spawnFood = terrain.GetComponent<SpawnFood>();
         player = GameObject.FindGameObjectWithTag("Head");
@@ -26,7 +26,7 @@ public class Eat : MonoBehaviour
             {
                 snake = other.GetComponent<Snake>();
             }
-            audio.Play();
+            audioSource.Play();
             snake.AddBodyPart();
             spawnFood.isEaten = true;
            
