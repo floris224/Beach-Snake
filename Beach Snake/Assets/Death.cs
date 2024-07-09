@@ -4,7 +4,7 @@ public class Death : MonoBehaviour
 {
     public TMP_Text text;
     public Snake snake;
-    public GameObject panel, parentSnake,textHolder;
+    public GameObject panel, parentSnake;
     private void Awake()
     {
       

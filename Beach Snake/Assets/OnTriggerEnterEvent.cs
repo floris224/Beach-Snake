@@ -12,7 +12,11 @@ public class OnTriggerEnterEvent : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Update()
     {
-        target = GameObject.FindWithTag("Finish");
+        if(target == null)
+        {
+            target = GameObject.FindWithTag("Finish");
+        }
+     
     }
 
     private void OnTriggerEnter(Collider other)
