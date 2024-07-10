@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2514120370132200256}
   - component: {fileID: 3769970636829129774}
   - component: {fileID: 5772955076472020710}
-  - component: {fileID: 291997523005429136}
   - component: {fileID: 569941780116371762}
   - component: {fileID: 7858376405578605392}
+  - component: {fileID: 6946457245113371413}
   m_Layer: 0
   m_Name: Cylinder.070
   m_TagString: Finish
@@ -90,7 +90,47 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!82 &291997523005429136
+--- !u!65 &569941780116371762
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2266854034605699309}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4258736, y: 2.0910697, z: 0.85944915}
+  m_Center: {x: -0.019152105, y: -0.55027115, z: -0.063168645}
+--- !u!114 &7858376405578605392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2266854034605699309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e3274fd10dd9842bb574fc92c47ce5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snake: {fileID: 0}
+  player: {fileID: 0}
+  terrain: {fileID: 0}
+  soundManager: {fileID: 0}
+  spawnFood: {fileID: 0}
+  audioSource: {fileID: 6946457245113371413}
+  boom: 0
+--- !u!82 &6946457245113371413
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,17 +142,17 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0214775c2dce43e40b050a6764e2a852, type: 3}
   m_Resource: {fileID: 8300000, guid: 0214775c2dce43e40b050a6764e2a852, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
-  MinDistance: 0.8155489
-  MaxDistance: 500
+  MinDistance: 116.82
+  MaxDistance: 543.35
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -187,44 +227,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!65 &569941780116371762
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2266854034605699309}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.4258736, y: 2.0910697, z: 0.85944915}
-  m_Center: {x: -0.019152105, y: -0.55027115, z: -0.063168645}
---- !u!114 &7858376405578605392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2266854034605699309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5e3274fd10dd9842bb574fc92c47ce5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snake: {fileID: 0}
-  player: {fileID: 0}
-  terrain: {fileID: 0}
-  spawnFood: {fileID: 0}
-  audioSource: {fileID: 0}
 --- !u!1 &6071782494156233041
 GameObject:
   m_ObjectHideFlags: 0

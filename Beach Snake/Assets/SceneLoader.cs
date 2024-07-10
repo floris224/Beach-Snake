@@ -27,16 +27,17 @@ public class SceneLoader : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         // Calculate the next scene index
         int lastSceneIndex = currentScene.buildIndex - 1;
+        SceneManager.LoadScene(lastSceneIndex);
 
-        // Check if the next scene index is within the valid range
-        if (lastSceneIndex > SceneManager.sceneCountInBuildSettings)
-        {
-            SceneManager.LoadScene(lastSceneIndex);
-        }
-        else
-        {
-            Debug.Log("No more scenes to load!");
-        }
+        //// Check if the next scene index is within the valid range
+        //if (lastSceneIndex > SceneManager.sceneCountInBuildSettings)
+        //{
+            
+        //}
+        //else
+        //{
+        //    Debug.Log("No more scenes to load!");
+        //}
     }
 
     public void Quit()

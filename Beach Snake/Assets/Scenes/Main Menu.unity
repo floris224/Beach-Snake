@@ -818,7 +818,6 @@ MonoBehaviour:
   snake: {fileID: 0}
   panel: {fileID: 825049613}
   parentSnake: {fileID: 0}
-  textHolder: {fileID: 177562306}
 --- !u!1 &57137771
 GameObject:
   m_ObjectHideFlags: 0
@@ -3152,7 +3151,6 @@ MonoBehaviour:
   snake: {fileID: 0}
   panel: {fileID: 825049613}
   parentSnake: {fileID: 0}
-  textHolder: {fileID: 177562306}
 --- !u!4 &357524730 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6369240132146650501, guid: 49ebdf7a7a317a344bdd77181e94b9c8, type: 3}
@@ -4441,7 +4439,6 @@ MonoBehaviour:
   snake: {fileID: 0}
   panel: {fileID: 825049613}
   parentSnake: {fileID: 0}
-  textHolder: {fileID: 177562306}
 --- !u!4 &517707507 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4964708965359224877, guid: 49ebdf7a7a317a344bdd77181e94b9c8, type: 3}
@@ -4639,7 +4636,6 @@ MonoBehaviour:
   snake: {fileID: 0}
   panel: {fileID: 572042153}
   parentSnake: {fileID: 0}
-  textHolder: {fileID: 0}
 --- !u!1001 &538011187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5457,7 +5453,6 @@ MonoBehaviour:
   snake: {fileID: 0}
   panel: {fileID: 572042153}
   parentSnake: {fileID: 0}
-  textHolder: {fileID: 0}
 --- !u!4 &613594746 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3862020556422491748, guid: 49ebdf7a7a317a344bdd77181e94b9c8, type: 3}
@@ -5676,7 +5671,6 @@ MonoBehaviour:
   snake: {fileID: 0}
   panel: {fileID: 572042153}
   parentSnake: {fileID: 0}
-  textHolder: {fileID: 0}
 --- !u!1 &628245384
 GameObject:
   m_ObjectHideFlags: 0
@@ -6497,7 +6491,6 @@ MonoBehaviour:
   snake: {fileID: 0}
   panel: {fileID: 572042153}
   parentSnake: {fileID: 0}
-  textHolder: {fileID: 0}
 --- !u!4 &690196905 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6369240132146650501, guid: 49ebdf7a7a317a344bdd77181e94b9c8, type: 3}
@@ -7123,7 +7116,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: b59f178a297877944b07eff5f07a28ef, type: 3}
   m_Resource: {fileID: 8300000, guid: b59f178a297877944b07eff5f07a28ef, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.636
+  m_Volume: 0.114
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -8951,7 +8944,6 @@ MonoBehaviour:
   snake: {fileID: 0}
   panel: {fileID: 825049613}
   parentSnake: {fileID: 0}
-  textHolder: {fileID: 177562306}
 --- !u!1 &921478133
 GameObject:
   m_ObjectHideFlags: 0
@@ -10382,7 +10374,6 @@ MonoBehaviour:
   snake: {fileID: 0}
   panel: {fileID: 572042153}
   parentSnake: {fileID: 0}
-  textHolder: {fileID: 0}
 --- !u!1001 &1019745420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11893,7 +11884,6 @@ MonoBehaviour:
   snake: {fileID: 0}
   panel: {fileID: 572042153}
   parentSnake: {fileID: 0}
-  textHolder: {fileID: 0}
 --- !u!4 &1108419000 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6369240132146650501, guid: 49ebdf7a7a317a344bdd77181e94b9c8, type: 3}
@@ -12619,7 +12609,6 @@ MonoBehaviour:
   snake: {fileID: 0}
   panel: {fileID: 572042153}
   parentSnake: {fileID: 0}
-  textHolder: {fileID: 0}
 --- !u!1001 &1219517471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15060,7 +15049,6 @@ MonoBehaviour:
   snake: {fileID: 0}
   panel: {fileID: 572042153}
   parentSnake: {fileID: 0}
-  textHolder: {fileID: 0}
 --- !u!4 &1568044654 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6369240132146650501, guid: 49ebdf7a7a317a344bdd77181e94b9c8, type: 3}
@@ -15108,7 +15096,6 @@ MonoBehaviour:
   snake: {fileID: 0}
   panel: {fileID: 825049613}
   parentSnake: {fileID: 0}
-  textHolder: {fileID: 177562306}
 --- !u!4 &1570198154 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4964708965359224877, guid: 49ebdf7a7a317a344bdd77181e94b9c8, type: 3}
@@ -16480,7 +16467,6 @@ MonoBehaviour:
   snake: {fileID: 0}
   panel: {fileID: 825049613}
   parentSnake: {fileID: 0}
-  textHolder: {fileID: 177562306}
 --- !u!1 &1743704992
 GameObject:
   m_ObjectHideFlags: 0
@@ -17369,7 +17355,6 @@ MonoBehaviour:
   snake: {fileID: 0}
   panel: {fileID: 572042153}
   parentSnake: {fileID: 0}
-  textHolder: {fileID: 0}
 --- !u!4 &1828578739 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8473059192643946758, guid: 49ebdf7a7a317a344bdd77181e94b9c8, type: 3}
@@ -17505,7 +17490,6 @@ MonoBehaviour:
   snake: {fileID: 0}
   panel: {fileID: 572042153}
   parentSnake: {fileID: 0}
-  textHolder: {fileID: 0}
 --- !u!1 &1845140793
 GameObject:
   m_ObjectHideFlags: 0
@@ -19819,7 +19803,6 @@ MonoBehaviour:
   snake: {fileID: 0}
   panel: {fileID: 572042153}
   parentSnake: {fileID: 0}
-  textHolder: {fileID: 0}
 --- !u!4 &2091807289 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4964708965359224877, guid: 49ebdf7a7a317a344bdd77181e94b9c8, type: 3}
@@ -20392,7 +20375,6 @@ MonoBehaviour:
   snake: {fileID: 0}
   panel: {fileID: 572042153}
   parentSnake: {fileID: 0}
-  textHolder: {fileID: 0}
 --- !u!4 &2131755117 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4488956054443426957, guid: d2c7c86f1c4809f4da5e31fb8188e055, type: 3}
